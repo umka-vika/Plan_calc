@@ -13,47 +13,57 @@ public class Form2 extends JFrame {
 	 * Create the frame.
 	 */
 	public Form2(final double a, final double b, final boolean pl) {
-
+		// Установка параметров окна
 		setBounds(100, 100, 450, 300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
-
+		
+		// Создание текстовой метки
 		JLabel label = new JLabel("\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043D\u0430\u043F\u043E\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u0435:");
 		label.setBounds(10, 11, 230, 14);
 		getContentPane().add(label);
-
+		
+		// Создание чекбокса
 		final JCheckBox checkBox = new JCheckBox("\u043B\u0438\u043D\u043E\u043B\u0438\u0443\u043C \u0438 \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u0435 \u043D\u0430 \u0440\u0435\u0437\u0438\u043D\u043E\u0432\u043E\u0439 \u043E\u0441\u043D\u043E\u0432\u0435");
 		checkBox.setBounds(20, 32, 299, 23);
 		getContentPane().add(checkBox);
-
+		
+		// Создание чекбокса
 		final JCheckBox checkBox_1 = new JCheckBox("\u043F\u043E\u043B\u0438\u0432\u0438\u043D\u0438\u043B\u0445\u043B\u043E\u0440\u0438\u0434\u043D\u044B\u0435");
 		checkBox_1.setBounds(20, 58, 172, 23);
 		getContentPane().add(checkBox_1);
-
+		
+		// Создание чекбокса
 		final JCheckBox checkBox_2 = new JCheckBox("\u043F\u0440\u043E\u0431\u043A\u043E\u0432\u044B\u0435 \u043F\u043E\u043B\u044B");
 		checkBox_2.setBounds(20, 84, 172, 23);
 		getContentPane().add(checkBox_2);
-
+		
+		// Создание чекбокса
 		final JCheckBox checkBox_3 = new JCheckBox("\u043B\u0430\u043C\u0438\u043D\u0430\u0442");
 		checkBox_3.setBounds(20, 110, 172, 23);
 		getContentPane().add(checkBox_3);
-		
+				
+		// Создание чекбокса
 		final JCheckBox checkBox_4 = new JCheckBox("\u043A\u0435\u0440\u0430\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u043F\u043B\u0438\u0442\u043A\u0430");
 		checkBox_4.setBounds(20, 136, 172, 23);
 		getContentPane().add(checkBox_4);
-
+		
+		// Создание чекбокса
 		final JCheckBox checkBox_5 = new JCheckBox("\u043A\u043E\u0432\u0440\u043E\u0432\u044B\u0435 \u043F\u043E\u043A\u0440\u044B\u0442\u0438\u044F");
 		checkBox_5.setBounds(20, 162, 172, 23);
 		getContentPane().add(checkBox_5);
-
+		
+		// Создание чекбокса
 		final JCheckBox checkBox_6 = new JCheckBox("\u043F\u0430\u0440\u043A\u0435\u0442 \u0438 \u043C\u0430\u0441\u0441\u0438\u0432\u043D\u0430\u044F \u0434\u043E\u0441\u043A\u0430");
 		checkBox_6.setBounds(20, 188, 172, 23);
 		getContentPane().add(checkBox_6);
-
+		
+		// Создание чекбокса
 		final JCheckBox checkBox_7 = new JCheckBox("\u043F\u043E\u043B\u0438\u043C\u0435\u0440\u043D\u044B\u0435");
 		checkBox_7.setBounds(20, 214, 172, 23);
 		getContentPane().add(checkBox_7);
 		
+		// Создание кнопки Расчитать
 		JButton btnNewButton = new JButton("\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044C");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -114,7 +124,8 @@ public class Form2 extends JFrame {
 				
 				double W = pl ? P*671 : 0;
 				double O = L+W;
-
+				
+				// Создание нового окна для вывода данных
 				Form3 frame = new Form3(S, m, O);
 				frame.setVisible(true);
 			}
