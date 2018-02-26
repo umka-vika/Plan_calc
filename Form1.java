@@ -14,6 +14,9 @@ import java.awt.event.ActionEvent;
 
 public class Form1 extends JFrame {
 
+	/**
+	 * Launch the application.
+	 */
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
@@ -31,6 +34,9 @@ public class Form1 extends JFrame {
 		});
 	}
 
+	/**
+	 * Create the frame.
+	 */
 	public Form1() {
 
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
