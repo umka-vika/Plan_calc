@@ -7,7 +7,6 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class Form3 extends JFrame {
-{
 
 	private JPanel contentPane;
 	private JTextField textField;
