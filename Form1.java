@@ -38,7 +38,7 @@ public class Form1 extends JFrame {
 	 * Create the frame.
 	 */
 	public Form1() {
-
+// Установка параметров окна
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 299, 178);
 		contentPane = new JPanel();
@@ -46,37 +46,45 @@ public class Form1 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		// Создание текстовой метки
 		JLabel lblNewLabel = new JLabel("\u0428\u0438\u0440\u0438\u043D\u0430:");
 		lblNewLabel.setBounds(10, 11, 89, 14);
 		contentPane.add(lblNewLabel);
 		
+		// Создание текстового поля
 		textField = new JTextField();
 		textField.setBounds(109, 8, 86, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
+		// Создание текстовой метки
 		JLabel lblNewLabel_1 = new JLabel("\u043C.");
 		lblNewLabel_1.setBounds(205, 11, 46, 14);
 		contentPane.add(lblNewLabel_1);
 		
+		// Создание текстовой метки
 		JLabel label = new JLabel("\u0414\u043B\u0438\u043D\u0430:");
 		label.setBounds(10, 39, 89, 14);
 		contentPane.add(label);
 
+		// Создание текстового поля
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
 		textField_1.setBounds(109, 36, 86, 20);
 		contentPane.add(textField_1);
-
+		
+		// Создание текстовой метки
 		JLabel label_1 = new JLabel("\u043C.");
 		label_1.setBounds(205, 39, 46, 14);
 		contentPane.add(label_1);
-
+		
+		// Создание чекбокса
 		final JCheckBox checkBox = new JCheckBox("\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u043F\u043B\u0438\u043D\u0442\u0443\u0441\u0430");
 		checkBox.setSelected(true);
 		checkBox.setBounds(20, 63, 195, 23);
 		contentPane.add(checkBox);
-
+		
+		// Создание кнопки Далее
 		JButton button = new JButton("\u0414\u0430\u043B\u0435\u0435");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
