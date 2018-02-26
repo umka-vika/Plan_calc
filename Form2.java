@@ -7,7 +7,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public clas Form2 extends JFrame {
+public class Form2 extends JFrame {
 
 	public Form2(final double a, final double b, final boolean pl) {
 
