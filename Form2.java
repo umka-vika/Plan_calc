@@ -8,7 +8,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class Form2 extends JFrame {
-
+	
+	/**
+	 * Create the frame.
+	 */
 	public Form2(final double a, final double b, final boolean pl) {
 
 		setBounds(100, 100, 450, 300);
