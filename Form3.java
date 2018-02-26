@@ -13,6 +13,10 @@ public class Form3 extends JFrame {
 	private JTextField textField_1;
 	private JTextField textField_2;
 
+	/**
+	 * Create the frame.
+	 */
+	
 	public Form3(double S, int m, double O) {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
